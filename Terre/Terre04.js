@@ -1,8 +1,6 @@
 //argurment est un nombre entier pair ou impaire ou pas un nombre entier
 const args = process.argv.slice(2);
 
-// const number = args[0];
-
 let i = 0;
 
 while (i < args.length ) {
@@ -23,7 +21,7 @@ while (i < args.length ) {
     console.log("Pas un nombre, tu ne me la mettras pas à l’envers.");
   
   //si le argument pas de arguments args[0]
-  } else if(args[i].Math.abs() === 0)  {
+  } else if(process.argv[1] === 0)  {
     console.log("Pas d'argument, tu ne me la mettras pas à l’envers.");
   }
   i++;
