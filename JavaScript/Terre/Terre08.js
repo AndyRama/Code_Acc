@@ -3,7 +3,7 @@
 // L’exposant ne pourra pas être négatif.
 
 // Exemples d’utilisation :
-// $> node exo.js 2 3
+// $> node Terre08.js 2 3
 // 8
 
 // Attention : je compte sur vous pour gérer les potentielles erreurs d’arguments.
@@ -32,7 +32,7 @@ if (process.argv.length !== 4) {
 
 // L’exposant ne pourra pas être négatif.
 } else if (exposant < 0) {
-    console.log("is not a exposant positive number");
+    console.log("it's not an exposant positive number");
     process.exit(1);
 
 // Affiche resultat nombre puissance exposant.
