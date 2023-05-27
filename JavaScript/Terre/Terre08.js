@@ -16,7 +16,8 @@ if (process.argv.length !== 4) {
 } else if (exposant < 0) {
     console.log("is not a exposant positive number");
     process.exit(1);
-    // Affiche resultat nombre puissance exposant.
+
+// Affiche resultat nombre puissance exposant.
 } else {
     console.log(Math.pow(nombre, exposant));
 }

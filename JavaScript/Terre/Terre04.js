@@ -1,4 +1,22 @@
-//argurment est un nombre entier pair ou impaire ou pas un nombre entier
+//Argurment est un nombre entier pair ou impaire ou pas un nombre entier
+
+// Exemples d’utilisation :
+// $> ruby exo.rb 2
+// pair
+
+// $> ruby exo.rb 5
+// impair
+
+
+// $> ruby exo.rb Bonjour
+// Tu ne me la mettras pas à l’envers.
+
+// $> ruby exo.rb
+// Tu ne me la mettras pas à l’envers.
+
+
+// Attention : gérez aussi les entiers négatifs.
+
 const args = process.argv.slice(2);
 
 let i = 0;
@@ -18,35 +36,13 @@ while (i < args.length ) {
 
   //sinon l'argument n'est pas un nombre
   } else if (isNaN(args[i])) {
-    console.log("Pas un nombre, tu ne me la mettras pas à l’envers.");
+    console.log("Ce n'est pas un nombre, tu ne me la mettras pas à l’envers.");
   
-  //si le argument pas de arguments args[0]
+  //si il n'y a pas d'arguments
   } else if(process.argv[1] === 0)  {
-    console.log("Pas d'argument, tu ne me la mettras pas à l’envers.");
+    console.log("il n'y a pas d'argument, tu ne me la mettras pas à l’envers.");
   }
   i++;
 }
 
 console.log(args);
-
-// Sortie attendue :
-
-// $> node Terre04.js 2
-// pair
-
-//OK
-
-// $> node Terre04.js 5
-// impair
-
-//OK
-
-// $> node Terre04.js Bonjour
-// Tu ne me la mettras pas à l’envers.
-
-//OK
-
-// $> node Terre04.js
-// Tu ne me la mettras pas à l’envers.
-
-//KO
