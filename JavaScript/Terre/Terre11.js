@@ -6,39 +6,43 @@
 
 // Attention : midi et minuit.
 
-///////////////////////////////////////////////// Pseudo code ///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Recupére l'argument apres le nom du fichier
-// Recupére l'heure HH dans l'argument args => HH:MM
-// si l'argument est egale à 24:00 alors args = 00:00
-// Si l'argument HH est inferieur à 12 alors afficher l'heure + AM
-// Si l'argument HH est superieur à 12 ou egale à 12 alors afficher l'heure + PM
+// On recupere l'argurment hh:mm
+// On determine hh et mm
+// Si hh < 12 => hh + min + AM
+// Si hh >= 12 && hh < 24 => (hh -12) + min + PM
+// Sinon hh = 24 => (hh = 00) + min + AM
+// Sinon erreur
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Recupére l'argument apres le nom du fichier
-let args = process.argv[2];
-// Recupére l'heure HH dans l'argument args => HH:MM
-let heure = args.split(":").reverse().pop();
+const args = process.argv[2]
 
-function changeTime(heure, args) {
-  // Si l'argument HH est inferieur à 12 alors afficher l'heure + AM
-  if (heure < 12) {
-    return args + "AM";
+let h = args.split(":").reverse().pop(); //HH
+console.log(h);
 
-    // Si l'argument HH est superieur à 12 ou egale à 12 alors afficher l'heure + PM
-  } else if (heure == 12 || heure < 24)   {
-    return args + "PM";
+let min = args.split(":").pop();//MM
+console.log(min);
 
-    // si l'argument est egale à 24:00 alors args = 00:00
-  } else if (heure == 24) {
-    args = args.replace(heure, "00");
-    return `${args}` + "AM";
-
-  } else {
-    // sinon l'argument n' est pas une heure valide
-    return "Heure invalide";
-  }
+function changeTimeTo12(h,min) {
+  //si h < 12 => h + min + AM
+  if(h < 12) {
+    return `${h}:${min}AM`
+    } else {
+      //si h >= 12 && h < 24 => (h -12) + min + PM
+      if(h >= 12 && h < 24) {
+        return `${h - 12}:${min}PM`
+      } else {
+        //sinon h = 24 => (heure = 00) + min + AM
+        if(h == 24) {
+          return `00:${min}AM`
+          //sinon erreur
+        } else {
+          return `Erreur: ${h}:${min}`
+        }
+      }
+    }
 }
 
-console.log(changeTime(heure, args));
+console.log(changeTimeTo12(h,min))
