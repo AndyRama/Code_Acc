@@ -18,24 +18,31 @@
 
 const args = process.argv[2] //hh:mm
 
-let h = args.split(":").reverse().pop()
-console.log(h); //hh
+let h = args.split(':').reverse().pop()
+// console.log(h) //hh
 
-let min = args.split(":").pop()
-console.log(min); //mm
+let min = args.split(':').pop().substring(0, 2)
+// console.log(min) //mm
 
-function changeTimeTo24(h,min) {
+let abv = args.split(':').pop().substring(4, 2)
+// console.log(abv) //am ou pm
 
-  // Si l'argument hh est inferieur à 12 alors afficher h + 12 et min
-  if(h < 12) {
-    return `${h + 12}:${min}`
-    // Si l'argument hh est superieur à 12 ou egale à 12 alors afficher h + min
-  } else if(h >= 12){
-  return `${h + 12}:${min}`
-  }else{
-    return " erreur"
+function changeTimeTo24(h, min, abv) {
+  // Si l'argument hh est inferieur à 12 && am alors afficher h et min
+  if (h < 12 && abv == 'am') {
+    return `${h}:${min}`
+  } else {
+    // Si l'argument hh est superieur à 12 ou egale à 12 && pm alors afficher h + 12 + min
+    if (h <= 12 && abv == 'pm') {
+      if (h == '12') {
+        return `${h}:${min}`
+      } else {
+        return `${parseInt(h) + 12}:${min}`
+      }
+    } else {
+      return `Erreur`
+    }
   }
-  // Sinon erreur
 }
 
-  console.log(changeTimeTo24(h,min));
+console.log(changeTimeTo24(h, min, abv))
