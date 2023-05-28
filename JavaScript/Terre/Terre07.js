@@ -1,6 +1,5 @@
 // Créez un programme qui affiche le nombre de caractères d’une chaîne de caractères passée en argument.
 
-
 // Exemples d’utilisation :
 // $> node Terre07.js “Hello world!”
 // 12
@@ -33,7 +32,7 @@ if (process.argv.length === 3) {
   const chaine = process.argv[2];
   const nombreCaracteres = countCaracteres(chaine);  
   console.log(nombreCaracteres);
-  
+
   } else {
     console.log("erreur");
 }

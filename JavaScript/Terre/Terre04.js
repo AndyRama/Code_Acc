@@ -7,42 +7,50 @@
 // $> ruby exo.rb 5
 // impair
 
-
 // $> ruby exo.rb Bonjour
 // Tu ne me la mettras pas à l’envers.
 
 // $> ruby exo.rb
 // Tu ne me la mettras pas à l’envers.
 
-
 // Attention : gérez aussi les entiers négatifs.
 
-const args = process.argv.slice(2);
+///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-let i = 0;
+// si le nombre est divisible par 2 //pair
+// sinon le nombre n'est pas divisible par 2 //impair
+// sinon le nombre est négatif
+// sinon l'argument n'est pas un nombre
+// si il n'y a pas d'argument
 
-while (i < args.length ) {
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const args = process.argv.slice(2)
+
+let i = 0
+
+while (i < args.length) {
   //si le nombre est divisible par 2
   if (args[i] % 2 === 0) {
-    console.log("ce nombre est pair");
+    console.log('ce nombre est pair')
 
-  //sinon le nombre n'est pas divisible par 2
+    //sinon le nombre n'est pas divisible par 2
   } else if (args[i] % 2 === 1) {
-    console.log("ce nombre est impair");
+    console.log('ce nombre est impair')
 
-  //sinon le nombre est negatif
+    //sinon le nombre est negatif
   } else if (args[i] < 0) {
-     console.log("ce nombre est negativif");
+    console.log('ce nombre est negativif')
 
-  //sinon l'argument n'est pas un nombre
+    //sinon l'argument n'est pas un nombre
   } else if (isNaN(args[i])) {
-    console.log("Ce n'est pas un nombre, tu ne me la mettras pas à l’envers.");
-  
-  //si il n'y a pas d'arguments
-  } else if(process.argv[1] === 0)  {
-    console.log("il n'y a pas d'argument, tu ne me la mettras pas à l’envers.");
+    console.log("Ce n'est pas un nombre, tu ne me la mettras pas à l’envers.")
+
+    //si il n'y a pas d'arguments
+  } else if (process.argv[1] === 0) {
+    console.log("il n'y a pas d'argument, tu ne me la mettras pas à l’envers.")
   }
-  i++;
+  i++
 }
 
-console.log(args);
+console.log(args)
