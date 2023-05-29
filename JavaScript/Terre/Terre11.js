@@ -20,10 +20,10 @@
 const args = process.argv[2]
 
 let h = args.split(":").reverse().pop(); //HH
-console.log(h);
+// console.log(h);
 
 let min = args.split(":").pop();//MM
-console.log(min);
+// console.log(min);
 
 function changeTimeTo12(h,min) {
   //si h < 12 => h + min + AM

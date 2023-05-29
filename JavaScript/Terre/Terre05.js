@@ -13,9 +13,9 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-//Division deux de nombre entier afiichage de la division et du reste
-//DIVISION ERROR [REFACTO CONDITION ELSE IF]
-//RESULTAT ET RESTE DE LA DIVISION SANS DECIMAL
+// Division deux de nombre entier afiichage de la division et du reste
+// Division error[refacto condition else if]
+// Résultat et reste de la division sans décimal
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -32,7 +32,7 @@ let result2 = number % number2
 if (result == 'Infinity' || result2 == 'NaN' || Math.trunc(result) === 0) {
   console.log(' résultat: ' + 'erreur')
 
-  //Résultat et reste de la division sans décimal
+// Résultat et reste de la division sans décimal
 } else {
   console.log(' résultat: ' + Math.trunc(result))
   console.log(' reste: ' + Math.trunc(result2))

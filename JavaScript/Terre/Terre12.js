@@ -29,11 +29,11 @@ let abv = args.split(':').pop().substring(4, 2)
 
 function changeTimeTo24(h, min, abv) {
   // Si l'argument hh est inferieur à 12 && am alors afficher h et min
-  if (h < 12 && abv == 'am') {
+  if (h < 12 && abv.toLowerCase() == 'am') {
     return `${h}:${min}`
   } else {
     // Si l'argument hh est superieur à 12 ou egale à 12 && pm alors afficher h + 12 + min
-    if (h <= 12 && abv == 'pm') {
+    if (h <= 12 && abv.toLowerCase() == 'pm') {
       if (h == '12') {
         return `${h}:${min}`
       } else {

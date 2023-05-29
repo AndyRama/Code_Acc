@@ -18,7 +18,7 @@
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
 //Recupérer les arguments
-//Prendre le premier argument est afficher la longeur de la chaine pour le nb caractere
+//Prendre le premier argument est afficher la longeur de la chaine pour le nb caractère
 //Prendre le second argument est afficher une erreur
 //Return result
 

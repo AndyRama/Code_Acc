@@ -26,7 +26,7 @@ const args = process.argv[2]
 function isPrimeNumber(number) {
   if (isNaN(number) || number <= 1) {
     console.log(
-      'il manque un argurment sinon' + ` "${number}"` + " n'est pas un nombre."
+      'il manque argurment sinon' + ` "${number}"` + " n'est pas un nombre."
     )
   } else {
     let isPrime = true
