@@ -11,7 +11,6 @@
 // On crée une fonction qui va vérifier si les chiffres sont différents les uns des autres.
 // On crée une boucle for qui va de 0 à 99 pour le deuxième premier chiffres.   [i] = 00
 // On crée une boucle for qui va de 0 à 99 pour le deuxième suivant chiffres.   [j] = 00
-
 // On crée une variable qui va contenir les chiffres de la combinaison.
 // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
 
@@ -29,7 +28,6 @@ for (let i = 0; i <= 99; i++) {
     // for (let k = j+1; k <= 9; k++) {
     //   for (let l = k+1; l <= 9; l++) {
     let combination = `${i}${j}`;
-
 
       if (allCombinaison(combination)) { 
         if (i < 10 && j < 10) {

@@ -13,9 +13,10 @@ const args = process.argv.slice(2);
 let i = 0;
 let result = '';
 
-while (i < args.length) {
-  // Inverser l'ordre des éléments dans le tableau
-  // Afficher les arguments et joindre en une seule chaîne
+if (i < args.length) {
+  // Inverser l'ordre des éléments et Afficher les arguments et joindre en une seule chaîne 
   result = result + args.reverse().join('\n');
   i++;
 }
+
+console.log(result);
