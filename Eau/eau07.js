@@ -4,7 +4,6 @@
 // $> python exo.py “bonjour mathilde, comment vas-tu ?!”
 // Bonjour Mathilde, Comment Vas-tu ?!
 
-
 // $> python exo.py 42
 // error
 

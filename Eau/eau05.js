@@ -4,10 +4,8 @@
 // $> python exo.py bonjour jour
 // true
 
-
 // $> python exo.py bonjour joure
 // false
-
 
 // $> python exo.py 42
 // error

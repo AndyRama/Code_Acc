@@ -4,7 +4,6 @@
 // $> python exo.py Ceci est le monde qui contient Charlie un homme sympa Charlie
 // 6
 
-
 // $> python exo.py test test test
 // 0
 

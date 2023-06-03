@@ -7,7 +7,6 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-
 // On crée une fonction qui va vérifier si les chiffres sont différents les uns des autres.
 // On crée une boucle for qui va de 0 à 99 pour le deuxième premier chiffres.   [i] = 00
 // On crée une boucle for qui va de 0 à 99 pour le deuxième suivant chiffres.   [j] = 00
@@ -15,6 +14,7 @@
 // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function allCombinaison(combination) {
   const digits = combination.split('');
   const uniqueDigits = [...new Set(digits)]; 
@@ -34,9 +34,9 @@ for (let i = 0; i <= 99; i++) {
           combination = `0${i}0${j}`;
         } else if (i < 99 && j < 99) {
           combination = `0${i}${j}`;
-        console.log(combination);
+        // console.log(combination);
          
-        } else {
+        } else if (result.length <= 4 ) {
           combination = `${i}${j}`;
         }
         result.push(combination);
