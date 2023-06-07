@@ -10,34 +10,38 @@
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
 // Recupére l'argument du fichier 
-// Si args est un nombre et il est divisible par 1 et par lui même  //Prime
-  // determiner prime number next
-// Sinon pas prime alors determiner le nombre premier superieur
-// Sinon afficher -1 si le paramètre est négatif ou mauvais.
+// Determiner le "nextPrimeNumber" avec number+ 1 
+// Sinon on affiche -1 si le paramètre est négatif ou mauvais.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const n = process.argv[2]
+const number = process.argv[2]
 
-console.log(n);
-
-function PrimeNumberNext(n) {
-  let i = 0
-
-  // Si args est un nombre Prime
-  //tanque i < n alors i++
-  while (i <= n && n >= 0) {
-    console.log(n);
-    if(n >= 1 && n % 1 === n && n % n === 1) {
-      i++
-    }
-    else {
-      console.log('-1 : erreur argument');
-    }
-    //boucle iteration (n , i)
+function primeNumber(number) {
+  if (number < 2) {
+    return false;
   }
-  // Sinon pas prime alors déterminer prime number next.
-  // Sinon afficher -1 si le paramètre est négatif ou mauvais.
-
-
+  
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }  
+  return true;
 }
+
+function nextPrimeNumber(number) {
+  if (number < 0 || isNaN(number)) {
+    return -1;
+  }
+  
+  let nextNumberPrime  = number + 1;
+  
+  while (!primeNumber(nextNumberPrime )) {
+    nextNumberPrime++;
+  }
+  
+  return nextNumberPrime ;
+}
+
+console.log(nextNumberPrime());
