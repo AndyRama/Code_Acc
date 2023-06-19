@@ -14,35 +14,22 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-//Déterminer l'argument
-//Si l'argument est présent || un nombre
-    //Tableau 1 ["bonjour" => "b", "o", "n" ...]
-    //Tableau 2 ["jour" => "j", "o", "u", "r" ...]  //Include
-      //Si meme return true
-      //sinon return False
-//sinon afficher error
+//recuperation des arguments
+// vérifier nombre d'argument
+// vérifier si arg1 est presente dans arg2 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//recuperation des arguments
+const arg1 = process.argv[2]
+const arg2 = process.argv[3]
 
-//Déterminer l'argument
-const args = process.argv.slice(2)
-
-//Si l'argument est présent || un nombre
-if (args.length === 2 && !isNaN(args[0]) && !isNaN(args[1])) {
-  console.log(args.includes(`${args[1]}`));//CONDITION 
-  //Si meme return true
-  //sinon return False
+// vérifier nombre d'argument
+if(process.argv.length !== 4 ) {
+  console.log('error');
+  process.exit(1)
 }
 
+// vérifier si arg1 est presente dans arg2 
+const resultat = arg1.includes(arg2)
 
-
-
-
-
-  //Tableau 2 ["jour" => "j", "o", "u", "r" ...] 
-  // console.log(args.includes(`${args[1]}`));//CONDITION 
-  //Si meme return true
-  //sinon return False
-//sinon afficher error
-
-console.log(args);
+console.log(resultat);
