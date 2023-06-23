@@ -1,13 +1,13 @@
 // Créez un programme qui détermine si une chaîne de caractères ne contient que des chiffres.
 
 // Exemples d’utilisation :
-// $> python exo.py “4445353”
+// $> node exo.js “4445353”
 // true
 
-// $> python exo.py 42
+// $> node exo.js 42
 // true
 
-// $> python exo.py “Bonjour 36”
+// $> node exo.js “Bonjour 36”
 // false
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
@@ -17,3 +17,17 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const isOnlyDigits = (str) => {
+  return /^\d+$/.test(str);
+};
+
+const input = process.argv[2];
+
+if (!input) {
+  console.error("Erreur : Aucun argument fourni.");
+  process.exit(1);
+}
+
+console.log(isOnlyDigits(input));
