@@ -17,3 +17,16 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const isOnlyDigits = (str) => {
+  return /^\d+$/.test(str);
+};
+
+const input = process.argv[2];
+
+if (!input) {
+  console.error("Erreur : Aucun argument fourni.");
+  process.exit(1);
+}
+
+console.log(isOnlyDigits(input));
