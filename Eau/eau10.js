@@ -52,6 +52,5 @@ for (let i =0; i < elements.length; i++) {
 
 console.log(`${index}`);
 
-
 // console.log(`Tableau : [${elements }]`);
 // console.log(`Recherche : [${recherche}]`);
