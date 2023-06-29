@@ -1,7 +1,8 @@
-// Créez un programme qui affiche toutes les différentes combinaisons possibles de trois chiffres dans l’ordre croissant, dans l’ordre croissant. La répétition est volontaire.
+// Créez un programme qui affiche toutes les différentes combinaisons possibles de trois chiffres dans l’ordre croissant, dans l’ordre croissant.
+// La répétition est volontaire.
 
 // Exemples d’utilisation :
-// $> python exo.py
+// $> node eau00.js
 // 012, 013, 014, 015, 016, 017, 018, 019, 023, 024, ... , 789
 // $>
 

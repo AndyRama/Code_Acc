@@ -19,14 +19,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const input = process.argv[2];
 
-const isOnlyDigits = (input) => {
-  return /^\d+$/.test(input);
-};
-
-
 if (!isNaN.input) {
   console.error("Erreur : Aucun argument fourni.");
   process.exit(1);
 }
+
+const isOnlyDigits = (input) => {
+  return /^\d+$/.test(input);
+};
 
 console.log(isOnlyDigits(input));

@@ -1,7 +1,7 @@
 // Créez un programme qui affiche le premier "nombre premier supérieur" au nombre donné en argument.
 
 // Exemples d’utilisation :
-// $> python exo.py 14
+// $> node eau04.js 14
 // 17
 // $>
 
@@ -9,13 +9,14 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Recupére l'argument du fichier 
+// Récupére l'argument du fichier 
 // Determiner le "nextPrimeNumber" avec number+ 1 
 // Sinon on affiche -1 si le paramètre est négatif ou mauvais.
+// Afficher le prochain nextPrime
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Recupére l'argument du fichier 
+// Récupére l'argument du fichier 
 const number = process.argv[2]
 
 // Determiner le "nextPrimeNumber" avec number+ 1 
@@ -47,4 +48,5 @@ function nextPrimeNumber(number) {
   return nextNumberPrime ;
 }
 
+// Afficher le prochain nextPrime
 console.log(nextNumberPrime());

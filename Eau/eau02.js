@@ -2,17 +2,17 @@
 
 
 // Exemples d’utilisation :
-// $> python exo.py “Suis” “Je” “Drôle”
+// $> node eau02.js “Suis” “Je” “Drôle”
 // Drôle
 // Je
 // Suis
 
 
-// $> python exo.py ha ho
+// $> node eau02.js ha ho
 // ho
 // ha
 
-// $> python exo.py “Bonjour 36”
+// $> node eau02.js “Bonjour 36”
 // Bonjour 36
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
