@@ -15,8 +15,10 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Recupére l'argument du fichier 
 const number = process.argv[2]
 
+// Determiner le "nextPrimeNumber" avec number+ 1 
 function primeNumber(number) {
   if (number < 2) {
     return false;
@@ -30,6 +32,7 @@ function primeNumber(number) {
   return true;
 }
 
+// Afficher -1 si le paramètre est négatif ou mauvais.
 function nextPrimeNumber(number) {
   if (number < 0 || isNaN(number)) {
     return -1;

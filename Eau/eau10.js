@@ -16,12 +16,12 @@
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
-//Récupérer  tout les arguments exepter le dernier 
-//Récupérer l'argument rechercher   ["charlie"]
-//Parcourir le tableau pour trouver l'index de l'élement recherché
-//Afficher l'index
-//Afficher -1 si l’élément n’est pas trouvé
-//Afficher 0 si pas assez d'arguments
+// Récupérer  tout les arguments exepter le dernier 
+// Récupérer l'argument rechercher   ["charlie"]
+// Parcourir le tableau pour trouver l'index de l'élement recherché
+// Afficher l'index
+// Afficher -1 si l’élément n’est pas trouvé
+// Afficher 0 si pas assez d'arguments
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

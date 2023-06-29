@@ -12,15 +12,13 @@
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
 
-
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Recupére les arguments du fichier min max
-// Determiner
-// effectuer une itération jusqu'a ce que min soit egale a max
-// creer unw tableau avex min inclus et max exlus 
-//resulte
-
+// Récupére les arguments du fichier min max
+// Déterminer
+// Effectuer une itération jusqu'a ce que min soit egale a max
+// Créer un tableau avex min inclus et max exlus 
+// Résultat
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
