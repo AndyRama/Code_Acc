@@ -36,9 +36,27 @@ function my_select_sort(array) {
     console.log("error");
     process.exit(1)
   }  
+  // Créer l' algorithme de tri par sélection
+  for(let i = 0; i < array.length - 1; i++){
+
+    let minIndex = i
+    
+    for(let j = i + 1; j < array.length; j++){
+      if(array[j] < array[minIndex]) {
+        minIndex = j
+      }
+    }
+    
+    if(minIndex != i ) {
+
+      let min = array[i]
+
+      array[i] = array[minIndex]
+      array[minIndex] = min
+    }
+  }
 }
 
-// Créer l' algorithme de tri par sélection
 // Récupérer les arguments de la ligne de commande.
 // Appeler la fonction de tri
 // Afficher le résultat
