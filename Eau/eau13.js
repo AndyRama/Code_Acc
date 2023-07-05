@@ -32,21 +32,21 @@
 
 function my_select_sort(array) {
   // Vérifier si l'entrée est une liste de nombres
-  if(!Array.isArray(array) || array.some(isNaN)){
+  if(!Array.isArray(array) || array.some(isNaN)) {
     console.log("error");
     process.exit(1)
   }  
   // Créer l' algorithme de tri par sélection
-  for(let i = 0; i < array.length - 1; i++){
+  for(let i = 0; i < array.length - 1; i++) {
 
     let minIndex = i
     
-    for(let j = i + 1; j < array.length; j++){
+    for(let j = i + 1; j < array.length; j++) { 
       if(array[j] < array[minIndex]) {
         minIndex = j
       }
     }
-    
+
     if(minIndex != i ) {
 
       let min = array[i]
