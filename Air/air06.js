@@ -17,5 +17,9 @@
 
 /////////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
+// Vérifier si le tableau array_de_strings est vide, non un tableau ou si la chaîne string est vide ou non une chaîne de caractères.
+// Si l'un des arguments est invalide, afficher "Erreur : arguments manquants ou invalides".
+// Initialiser un tableau vide appelé nouvel_array_de_strings.
+// Parcourir chaque élément dans le tableau array_de_strings.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
