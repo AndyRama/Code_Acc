@@ -9,7 +9,7 @@
 
 
 // Exemples d’utilisation :
-// $> python exo.py “Bonjour les gars”
+// $> node exo.js “Bonjour les gars”
 // Bonjour
 // les
 // gars
@@ -20,3 +20,21 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function ma_fonction(string_a_couper, string_separateur) {
+  if (!string_a_couper || !string_separateur) {
+    console.error("Erreur : arguments manquants");
+    return;
+  }
+  
+  const tableau = string_a_couper.split(string_separateur);
+  
+  for (let i = 0; i < tableau.length; i++) {
+    console.log(tableau[i]);
+  }
+  
+  return tableau;
+}
+
+// Exemple d'utilisation
+ma_fonction("Bonjour les gars", " ");
