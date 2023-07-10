@@ -36,5 +36,4 @@ function ma_fonction(string_a_couper, string_separateur) {
   return tableau;
 }
 
-// Exemple d'utilisation
 ma_fonction("Bonjour les gars", " ");

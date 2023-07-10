@@ -8,7 +8,7 @@
 
 
 // Exemples d’utilisation :
-// $> python exo.py “Crevette magique dans la mer des étoiles” “la”
+// $> node air01.js “Crevette magique dans la mer des étoiles” “la”
 // Crevette magique dans 
 //  mer des étoiles
 
@@ -19,3 +19,20 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function ma_fonction(string_a_couper, string_separateur) {
+  if (!string_a_couper || !string_separateur) {
+    console.error("Erreur : arguments manquants");
+    return;
+  }
+  
+  const tableau = string_a_couper.split(string_separateur);
+  
+  for (let i = 0; i < tableau.length; i++) {
+    console.log(tableau[i]);
+  }
+  
+  return tableau;
+}
+
+ma_fonction("Crevette magique dans la mer des étoiles", "la");
