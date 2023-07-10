@@ -7,10 +7,10 @@
 // }
 
 // Exemples d’utilisation :
-// $> python exo.py “Michel” “Albert” “Thérèse” “Benoit” “t”
+// $> python node air06.js “Michel” “Albert” “Thérèse” “Benoit” “t”
 // Michel
 
-// $> python exo.py “Michel” “Albert” “Thérèse” “Benoit” “a”
+// $> python node air06.js “Michel” “Albert” “Thérèse” “Benoit” “a”
 // Michel, Thérèse, Benoit
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
