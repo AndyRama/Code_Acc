@@ -21,5 +21,11 @@
 // Si l'un des arguments est invalide, afficher "Erreur : arguments manquants ou invalides".
 // Initialiser un tableau vide appelé nouvel_array_de_strings.
 // Parcourir chaque élément dans le tableau array_de_strings.
+// Si l'élément contient la chaîne string, l'ajouter au tableau nouvel_array_de_strings.
+// Retourner le tableau nouvel_array_de_strings.
+// Récupérer les arguments passés en ligne de commande.
+// Appeler la fonction ma_fonction en utilisant les arguments récupérés, à l'exception du dernier argument.
+// Stocker le résultat renvoyé par la fonction ma_fonction dans une variable appelée resultat.
+// Si le résultat est défini, afficher le résultat sous forme d'une chaîne de caractères, en séparant chaque élément avec une virgule
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
