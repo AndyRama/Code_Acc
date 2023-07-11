@@ -16,3 +16,14 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function sortedFusion(list1, list2) {
+  if (!Array.isArray(list1) || !Array.isArray(list2)) {
+    console.error('Les arguments doivent être des tableaux.');
+    process.exit(1);
+  }
+
+  let mergedList = [];
+  let index1 = 0;
+  let index2 = 0;
+
+}
