@@ -6,12 +6,11 @@
 // 	return (new_array)
 // }
 
-
 // Exemples d’utilisation :
-// $> ruby exo.rb 1 3 4 2
+// $> node air07.js 1 3 4 2
 // 1 2 3 4
 
-// $> ruby exo.rb 10 20 30 40 50 60 70 90 33
+// $> node air07.js 10 20 30 40 50 60 70 90 33
 // 10 20 30 33 40 50 60 70 90
 
 
