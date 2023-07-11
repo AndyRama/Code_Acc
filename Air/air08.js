@@ -45,6 +45,22 @@ function sortedFusion(list1, list2) {
     mergedList.push(list2[index2]);
     index2++;
   }
-
   return mergedList;
 }
+
+// Vérifier les arguments de ligne de commande
+const args = process.argv.slice(2);
+
+if (args.length !== 5 || args[3] !== 'fusion') {
+  console.error('Arguments invalides. Utilisation : node air08.js <list1> fusion <list2>');
+  process.exit(1);
+}
+
+// Extraire les listes d'entiers
+const list1 = args[0].split(' ').map(Number);
+const list2 = args[4].split(' ').map(Number);
+
+// Appeler la fonction sortedFusion 
+const mergedList = sortedFusion(list1, list2);
+// afficher le résultat
+console.log(mergedList.join(' '));
