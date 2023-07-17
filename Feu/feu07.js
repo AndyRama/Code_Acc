@@ -1,6 +1,5 @@
 // Voici un générateur de labyrinthe écrit en Ruby :
 
-
 // if ARGV.count < 3 || ARGV[2].length < 5
 //   puts “params needed: height width characters”
 // else

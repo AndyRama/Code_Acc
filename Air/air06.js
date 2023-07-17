@@ -7,10 +7,10 @@
 // }
 
 // Exemples d’utilisation :
-// $> python node air06.js “Michel” “Albert” “Thérèse” “Benoit” “t”
+// $> node air06.js “Michel” “Albert” “Thérèse” “Benoit” “t”
 // Michel
 
-// $> python node air06.js “Michel” “Albert” “Thérèse” “Benoit” “a”
+// $> node air06.js “Michel” “Albert” “Thérèse” “Benoit” “a”
 // Michel, Thérèse, Benoit
 
 // Afficher error et quitter le programme en cas de problèmes d’arguments.
