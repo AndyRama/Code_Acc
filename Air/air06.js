@@ -68,4 +68,7 @@ const string = args[args.length - 1];
 // Stocker le résultat renvoyé par la fonction ma_fonction dans une variable appelée resultat.
 const resultat = ma_fonction(array_of_strings, string)
 
-// Si le résultat est défini, afficher le résultat sous forme d'une chaîne de caractères, en séparant chaque élément avec une virgule
+// Affichage du résultat
+if (resultat !== undefined) {
+  console.log(resultat.join(", "));
+}
