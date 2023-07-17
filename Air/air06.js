@@ -24,7 +24,8 @@
 // Si l'élément contient la chaîne string, l'ajouter au tableau nouvel_array_de_strings.
 // Retourner le tableau nouvel_array_de_strings.
 // Récupérer les arguments passés en ligne de commande.
-// Appeler la fonction ma_fonction en utilisant les arguments récupérés, à l'exception du dernier argument.
+// Vérification des arguments
+// Extraction de l'array de strings et de la sous-chaîne
 // Stocker le résultat renvoyé par la fonction ma_fonction dans une variable appelée resultat.
 // Si le résultat est défini, afficher le résultat sous forme d'une chaîne de caractères, en séparant chaque élément avec une virgule
 
@@ -48,9 +49,21 @@ for(const element of array_of_strings) {
     new_array_of_String.push(element)
   }
 }
-// Retourner le tableau nouvel_array_de_strings.
+  // Renvoyer le tableau nouvel_array_de_strings.
+  return new_array_of_String
+}
 // Récupérer les arguments passés en ligne de commande.
-// Appeler la fonction ma_fonction en utilisant les arguments récupérés, à l'exception du dernier argument.
+const args = process.argv.slice(2)
+
+// Vérification des arguments
+if(args.length < 2) {
+  console.log("Erreur: arguments")
+  process.exit(1)
+}
+
+// Extraction de l'array de strings et de la sous-chaîne
+const array_de_strings = args.slice(0, args.length - 1);
+const string = args[args.length - 1];
+
 // Stocker le résultat renvoyé par la fonction ma_fonction dans une variable appelée resultat.
 // Si le résultat est défini, afficher le résultat sous forme d'une chaîne de caractères, en séparant chaque élément avec une virgule
-}
