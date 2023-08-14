@@ -14,23 +14,4 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Récupération les arguments
-// Vérifier le nombre d'argument
-// Vérifier si arg1 est presente dans arg2 
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Récupération les arguments
-const arg1 = process.argv[2]
-const arg2 = process.argv[3]
-
-// Vérifier le nombre d'argument
-if(process.argv.length !== 4 ) {
-  console.log('error');
-  process.exit(1)
-}
-
-// Vérifier si arg1 est presente dans arg2 
-const resultat = arg1.includes(arg2)
-
-console.log(resultat);
