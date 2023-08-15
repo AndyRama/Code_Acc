@@ -19,51 +19,6 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
  
-// Création de la fonction my_select_sort(array)
-// Vérifier si l'entrée est une liste de nombres
-// Créer l' algorithme de tri par sélection
-// Récupérer les arguments de la ligne de commande.
-// Appeler la fonction de tri
-// Afficher le résultat
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Création de la fonction my_select_sort(array)
-function my_select_sort(array) {
-  // Vérifier si l'entrée est une liste de nombres
-  if(!Array.isArray(array) || array.some(isNaN)) {
-    console.log("error");
-    process.exit(1)
-  }  
-
-  
-  // Créer l'algorithme de tri par sélection // ['6', '5', '4', '3', '2', '1' ]
-  for(let i = 0; i < array.length - 1; i++) {
-    let minIndex = i                                    
-    
-    for(let j = i + 1; j < array.length; j++) { 
-      if(array[j] < array[minIndex]) {
-        minIndex = j                                   
-      }
-    }
-
-    if(minIndex != i ) {
-
-      let min = array[i]
-      array[i] = array[minIndex]
-      array[minIndex] = min                         
-    }
-  }
-  return array
-}
-
-// Récupérer les arguments de la ligne de commande.
-const args = process.argv.slice(2)
-console.log("Entrée:");
-console.log(args);
-
-// console.log("Tableau trié"); // Appeler la fonction de tri
-// console.log(my_select_sort(args.map(Number)));
-
-console.log("Sortie:"); // Afficher le résultat
-console.log(my_select_sort(args.map(Number)).join(" "));
