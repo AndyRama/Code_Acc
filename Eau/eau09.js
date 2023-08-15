@@ -14,32 +14,6 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Récupére les arguments du fichier min max
-// Déterminer
-// Effectuer une itération jusqu'a ce que min soit egale a max
-// Créer un tableau avex min inclus et max exlus 
-// Résultat
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Recupére les arguments du fichier 
-const args = process.argv.slice(2);
-
-function displayRange(values) {
-  const numbers = values.map((val) => parseInt(val));
-
-  if (numbers.some(isNaN)) {
-    console.error("Erreur : Les arguments doivent être des nombres.");
-    process.exit(1);
-  }
-
-  const min = Math.min(...numbers);
-  const max = Math.max(...numbers);
-
-  const range = Array.from({ length: max - min }, (_, index) => min + index);
-  console.log(range.join(" "));
-}
-
-displayRange(args);
 
 
