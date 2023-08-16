@@ -11,33 +11,4 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
-// Vérifier le nombre d'argument
-// Récupération des éléments à trier
-// Trier les élements(.sort)
-// Affichage des élements ordonnés
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Vérifier le nombre d'argument
-if(process.argv.length < 3 ){
-  console.log("Erreur : il faut au moins un élément à trier");
-  process.exit(1)
-}
-
-// Récupération des éléments à trier
-const elements = process.argv.slice(2)
-
-console.log(elements);
-
-// Trier les élements(.sort)
-elements.sort();
-
-// Affichage des élements ordonnés
-console.log(elements.join(' '));
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Error
-// node eau14.js A Z E R T Y
-// tail: cannot open 'Y' for reading: No such file or directory
