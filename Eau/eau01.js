@@ -22,6 +22,11 @@ function allCombi(combi) {
   return digits.length == uniqueDigits.length
 }
   // On crée une boucle for qui va de 0 à 99 pour le deuxième premier chiffres.   [i] = 00
-  // On crée une boucle for qui va de 0 à 99 pour le deuxième suivant chiffres.   [j] = 00
+  for( let i = 0; i <= 99; i++) {
+    // On crée une boucle for qui va de 0 à 99 pour le deuxième suivant chiffres.   [j] = 00
+    for(let j = 0 && i >= 99; j <= 99; j++) {
+  }
+}
   // On crée une variable qui va contenir les chiffres de la combinaison.
+  let combi = `${i}${j}`
   // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
