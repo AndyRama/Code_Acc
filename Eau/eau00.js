@@ -35,17 +35,23 @@ function checkCombination(combination) {
 const result = [];
 
 // On crée une boucle for qui va de 0 à 9 pour le premier chiffre.
+  for(let i = 0; i <= 9; i++) {
 
-  // On crée une boucle for qui va de 0 à 9 pour le deuxième chiffre.
-  
-    // On crée une boucle for qui va de 0 à 9 pour le troisième chiffre.
-    
-      // On crée une variable qui va contenir les chiffres de la combinaison.
-      
+    // On crée une boucle for qui va de 0 à 9 pour le deuxième chiffre.
+    for(let j = i + 1; j <= 9; j++) {
 
-      // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
-      
+      // On crée une boucle for qui va de 0 à 9 pour le troisième chiffre.
+      for( let k = j + 1; k <= 9 ; k++) {
+
+        // On crée une variable qui va contenir les chiffres de la combinaison.
+        let combi = `${i}${j}${k}`
+        
+        // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
+        
         // on ajoute la combinaison au tableau result
-
+      }
+    }
+      
+  }
 
 console.log(result.join(', '));
