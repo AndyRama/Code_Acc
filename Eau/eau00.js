@@ -24,3 +24,28 @@
 // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// On crée une function qui va vérifier si les chiffres sont différents les uns des autres
+function checkCombination(combination) {
+  const digits = combination.split('');
+  const uniqueDigits = [...new Set(digits)]; 
+  return digits.length === uniqueDigits.length;
+}
+
+const result = [];
+
+// On crée une boucle for qui va de 0 à 9 pour le premier chiffre.
+
+  // On crée une boucle for qui va de 0 à 9 pour le deuxième chiffre.
+  
+    // On crée une boucle for qui va de 0 à 9 pour le troisième chiffre.
+    
+      // On crée une variable qui va contenir les chiffres de la combinaison.
+      
+
+      // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
+      
+        // on ajoute la combinaison au tableau result
+
+
+console.log(result.join(', '));
