@@ -47,8 +47,10 @@ const result = [];
         let combi = `${i}${j}${k}`
         
         // On appelle la fonction qui va vérifier si les chiffres sont différents les uns des autres.
-        
-        // on ajoute la combinaison au tableau result
+        if(checkCombination(combi)) {
+          // on ajoute la combinaison au tableau result
+          result.push(combi)
+        }
       }
     }
       
