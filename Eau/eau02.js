@@ -25,3 +25,18 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// Récupérer les aruments passés en ligne de cmd
+
+const args = process.argv.slice(2)
+
+let i =0
+let result = ''
+
+if(i < args.length) {
+  // Inverser l'ordre des éléments dans le tableau 
+  result = result + args.reverse().join('\n')
+  i++
+}
+
+// Afficher les argurments et joindre en une seule chaine de caracteres séparée par des sauts de ligne
+console.log(result);
