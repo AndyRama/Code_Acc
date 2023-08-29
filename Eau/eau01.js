@@ -29,11 +29,17 @@ for (let i = 0; i <= 99; i++) {
 
     let combi = `${i}${j}`;
 
-      if (allCombi(combi)) { 
-        if (i < 10 && j < 10) {
-          combi = `0${i}0${j}`;
+    if (allCombi(combi)) { 
+      if (i < 10 && j < 10) {
+        combi = `0${i}0${j}`;
+      } else if (i < 99 && j < 99) {
+        combi = `0${i}${j}`;
 
-        result.push(combi);
+      } else if (result.length <= 4 ) {
+        combi = `${i}${j}`;
+      }
+      
+      result.push(combi);
     }
   }
 }
