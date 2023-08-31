@@ -30,7 +30,13 @@ function capitalizeEveryOtherLetter(string) {
     if(/[a-za-Z]/.test(char)) {
       if(shouldCapiltalize) {
         result += char.toUpercase()
+      } else {
+        result += char.toLowerCase()
       }
-    }
+      shouldCapiltalize = !shouldCapiltalize
+    } else {
+      result += char
+    }   
   }
+  return result
 }
