@@ -27,6 +27,10 @@ function capitalizeEveryOtherLetter(string) {
 
   for(let i = 0; i < string.length; i++) {
     const char = string[i]
-    
+    if(/[a-za-Z]/.test(char)) {
+      if(shouldCapiltalize) {
+        result += char.toUpercase()
+      }
+    }
   }
 }
