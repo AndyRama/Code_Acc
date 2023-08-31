@@ -20,3 +20,13 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+function capitalizeEveryOtherLetter(string) {
+
+  let result = '';
+  let shouldCapiltalize = true
+
+  for(let i = 0; i < string.length; i++) {
+    const char = string[i]
+    
+  }
+}
