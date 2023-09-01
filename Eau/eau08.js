@@ -22,6 +22,19 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // On recupere l'argument
+const input = process.argv[2]
+
 // On verifie si l'argument est present
-// On verifie ue l'argument contient uniquement des nombres
+if (!isNaN.input) {
+  console.error("Erreur : Aucun argument fourni");
+  process.exit(1)
+  
+}
+
+// On verifie si l'argument contient uniquement des nombres
+const isOnlyDigits = (input) => {
+  return /^\d+$/.test(input)
+}
+
 // On affiche le resultat
+console.log(isOnlyDigits(input));
