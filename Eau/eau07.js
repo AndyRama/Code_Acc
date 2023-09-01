@@ -12,4 +12,13 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
+// Vérification du nombre d'arguments
+// Récupération de la chaîne de caractères depuis le premier argument
+// Vérification si la chaîne est vide
+// Créer une fonction pour mettre en majuscule la première lettre d'un mot
+// Séparation de la chaîne de caractères en mots
+// Transformation de chaque mot en mettant en majuscule la première lettre
+// Reconstruction de la chaîne de caractères avec les mots transformés
+// Affichage du résultat
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
