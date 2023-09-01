@@ -40,9 +40,17 @@ if(inputString.length === 0) {
 
 // Créer une fonction pour mettre en majuscule la première lettre d'un mot
 function capitalizeFirstLetter(word) {
-  return 
+  return word.charAt(0).toUpperCase + word.slice(1).toLowerCase
 }
+
 // Séparation de la chaîne de caractères en mots
+const words = inputString.split(/\s+/)
+
 // Transformation de chaque mot en mettant en majuscule la première lettre
+const capitalizeWords = words.map(capitalizeFirstLetter)
+
 // Reconstruction de la chaîne de caractères avec les mots transformés
+const outputString = capitalizeWords.join(" ")
+
 // Affichage du résultat
+console.log(outputString);
