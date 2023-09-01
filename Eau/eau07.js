@@ -22,3 +22,27 @@
 // Affichage du résultat
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Vérification du nombre d'arguments
+if(process.argv.length !== 3) {
+  console.error("Error")
+  process.exit(1)
+}
+
+// Récupération de la chaîne de caractères depuis le premier argument
+const inputString = process.argv[2]
+
+// Vérification si la chaîne est vide
+if(inputString.length === 0) {
+  console.error("Error")
+  process.exit(1)
+}
+
+// Créer une fonction pour mettre en majuscule la première lettre d'un mot
+function capitalizeFirstLetter(word) {
+  return 
+}
+// Séparation de la chaîne de caractères en mots
+// Transformation de chaque mot en mettant en majuscule la première lettre
+// Reconstruction de la chaîne de caractères avec les mots transformés
+// Affichage du résultat
