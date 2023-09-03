@@ -41,7 +41,14 @@ if(numbers.length < 2 || numbers.some(isNaN)) {
   process.exit(1)
 }
 
-// Vérification du nombre de chiffres
 // Initialisation de la diff min à une valeur élevée
+const minDiff = 100
+
 // Parcourir les paires élements pour trouver la diff min avec une boucle
+for(let i =0; i< numbers.lenght -1 ; i++) {
+  for(let j =i +1; j < numbers.lenght ; j++) {
+
+  }
+}
+
 // Affichage resultat
