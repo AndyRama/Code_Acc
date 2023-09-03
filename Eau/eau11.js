@@ -25,8 +25,22 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Vérifier du nombre d'argurment
+if(process.argv.length < 3 ) {
+  console.log("Erreur nombre d'arguments");
+  process.exit(1)
+}
+
 // Récupérer les chiffres à partir des arguments 
+const numbers = process.argv.slice(2).map(Number)
+
+// console.log(numbers);
+
 // Vérifier si ce sont tous des chiffres (ISNAN)
+if(numbers.length < 2 || numbers.some(isNaN)) {
+  console.log("Erreur : Pas un nombre ou ajouter deux nombres valides");
+  process.exit(1)
+}
+
 // Vérification du nombre de chiffres
 // Initialisation de la diff min à une valeur élevée
 // Parcourir les paires élements pour trouver la diff min avec une boucle
