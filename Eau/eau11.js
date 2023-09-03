@@ -14,7 +14,20 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
 
+// Vérifier du nombre d'argurment
+// Récupérer les chiffres à partir des arguments 
+// Vérifier si ce sont tous des chiffres (ISNAN)
+// Vérification du nombre de chiffres
+// Initialisation de la diff min à une valeur élevée
+// Parcourir les paires élements pour trouver la diff min avec une boucle
+// Affichage resultat
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+// Vérifier du nombre d'argurment
+// Récupérer les chiffres à partir des arguments 
+// Vérifier si ce sont tous des chiffres (ISNAN)
+// Vérification du nombre de chiffres
+// Initialisation de la diff min à une valeur élevée
+// Parcourir les paires élements pour trouver la diff min avec une boucle
+// Affichage resultat
