@@ -42,13 +42,17 @@ if(numbers.length < 2 || numbers.some(isNaN)) {
 }
 
 // Initialisation de la diff min à une valeur élevée
-const minDiff = 100
+let minDiff = 100
 
 // Parcourir les paires élements pour trouver la diff min avec une boucle
-for(let i =0; i< numbers.lenght -1 ; i++) {
-  for(let j =i +1; j < numbers.lenght ; j++) {
-
+for(let i =0; i< numbers.length -1 ; i++) {
+  for(let j =i +1; j < numbers.length ; j++) {
+    const diff = Math.abs(numbers[i] - numbers[j])
+    if(diff < minDiff) {
+      minDiff = diff
+    }
   }
 }
 
 // Affichage resultat
+console.log(minDiff);
