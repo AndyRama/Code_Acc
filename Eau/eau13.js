@@ -19,6 +19,18 @@
 
 ///////////////////////////////////////////////// Pseudo code ////////////////////////////////////////////////////////////////
  
-
+// Création de la fonction my_select_sort(array)
+// Vérifier si l'entrée est une liste de nombres
+// Créer l' algorithme de tri par sélection
+// Récupérer les arguments de la ligne de commande.
+// Appeler la fonction de tri
+// Afficher le résultat
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Création de la fonction my_select_sort(array)
+// Vérifier si l'entrée est une liste de nombres
+// Créer l' algorithme de tri par sélection
+// Récupérer les arguments de la ligne de commande.
+// Appeler la fonction de tri
+// Afficher le résultat
