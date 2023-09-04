@@ -31,3 +31,20 @@
 // Affichage des nombres triés
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Vérifier le nombre d'argument
+if(process.argv.length < 3 ) {
+  console.log("Erreur : veuillez spécifier une liste de nombres à trier");
+  process.exit(1)
+}
+
+// Récupérer les chiffres à partir des argurments
+const arg = process.argv.slice(2).map(number)
+
+// Vérifier sinous avons que des nombre(ISNAN)
+
+// Fonction de tri à bulle
+
+// Trie des nombres
+
+// Affichage des nombres triés
