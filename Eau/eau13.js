@@ -38,8 +38,18 @@ function my_select_sort(array) {
   }  
 }
 
-// Vérifier si l'entrée est une liste de nombres
-// Créer l' algorithme de tri par sélection
+// Créer l'algorithme de tri par sélection // ['6', '5', '4', '3', '2', '1' ]
+  for(let i = 0; i < array.length - 1; i++) {
+    let minIndex = i                                    
+
+    for(let j = i + 1; j < array.length; j++) { 
+      if(array[j] < array[minIndex]) {
+        minIndex = j                                   
+      }
+    }
+  }
+
+  
 // Récupérer les arguments de la ligne de commande.
 // Appeler la fonction de tri
 // Afficher le résultat
