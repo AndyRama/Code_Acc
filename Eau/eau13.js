@@ -28,7 +28,16 @@
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
 // Création de la fonction my_select_sort(array)
+function my_select_sort(array) {
+  // Vérifier si l'entrée est une liste de nombres
+  if(!Array.isArray(array) || array.some(isNaN)) {
+    console.log("error");
+    process.exit(1)
+  }  
+}
+
 // Vérifier si l'entrée est une liste de nombres
 // Créer l' algorithme de tri par sélection
 // Récupérer les arguments de la ligne de commande.
