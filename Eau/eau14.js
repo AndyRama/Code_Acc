@@ -17,3 +17,13 @@
 // Affichage des élements ordonnés
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Vérifier le nombre d'argument
+if(process.argv.length < 3 ){
+  console.log("Erreur : il faut au moins un élément à trier");
+  process.exit(1)
+}
+
+// Récupération des éléments à trier
+// Trier les élement(.sort)
+// Affichage des élements ordonnés
