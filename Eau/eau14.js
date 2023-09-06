@@ -33,3 +33,8 @@ console.log(elements);
 elements.sort();
 
 // Affichage des élements ordonnés
+console.log(elements.join(' '));
+
+// Error
+// node eau14.js A Z E R T Y
+// tail: cannot open 'Y' for reading: No such file or directory
