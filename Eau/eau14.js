@@ -25,5 +25,11 @@ if(process.argv.length < 3 ){
 }
 
 // Récupération des éléments à trier
+const elements = process.argv.slice(2)
+
+console.log(elements);
+
 // Trier les élement(.sort)
+elements.sort();
+
 // Affichage des élements ordonnés
