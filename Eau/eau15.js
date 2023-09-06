@@ -3,3 +3,9 @@
 // Afficher "J’ai terminé l’Épreuve de la Eau et c’était facile."
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function victoire() {
+  console.log("J'ai terminé l'Épreuve de la Eau et c'était un peu plus dure.")
+}
+
+victoire()
