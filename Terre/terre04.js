@@ -31,6 +31,17 @@ while(i < args.length ){
     console.log("ce nombre est negatif");
   }
 
-  //sinon l'argument n'est pas un nombre
+  //sinon si l'argument n'est pas un nombre
+  else if(isNaN(argss[i])) {
+    console.log("Pas un nombre, tu ne me la mettras pas à l’envers.");
+  }
+  
   //si le argument pas de arguments args[0]
+  else if(args[i].Math.abs() === 0) {
+    console.log("Pas argument, tu ne me la mettras pas à l’envers.");
+  }
+
+  i++
 }
+
+console.log(args);
